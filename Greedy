@@ -2477,7 +2477,7 @@ ChatAlert_Button.MouseButton1Click:Connect(function()
 end)
 
 CannonTP1_Button.MouseButton1Click:Connect(function()
-	TeleportTO(-61, 34, -228,"pos","safe")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6048.509765625, -152.31680297851562, -19.11366844177246)
 end)
 
 CannonTP2_Button.MouseButton1Click:Connect(function()
