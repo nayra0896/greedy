@@ -452,7 +452,7 @@ Game_Section_Button.BorderSizePixel = 0
 Game_Section_Button.Position = UDim2.new(0, 0, 0, 65)
 Game_Section_Button.Size = UDim2.new(0, 105, 0, 30)
 Game_Section_Button.Font = Enum.Font.Oswald
-Game_Section_Button.Text = "Game"
+Game_Section_Button.Text = "ExpedisiAntartica"
 Game_Section_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 Game_Section_Button.TextScaled = true
 Game_Section_Button.TextSize = 14.000
@@ -736,7 +736,7 @@ CannonTP1_Button.BorderSizePixel = 0
 CannonTP1_Button.Position = UDim2.new(0, 25, 0, 400)
 CannonTP1_Button.Size = UDim2.new(0, 150, 0, 30)
 CannonTP1_Button.Font = Enum.Font.Oswald
-CannonTP1_Button.Text = "TP Cannon 1"
+CannonTP1_Button.Text = "TP BaseCamp"
 CannonTP1_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 CannonTP1_Button.TextScaled = true
 CannonTP1_Button.TextSize = 14.000
@@ -751,7 +751,7 @@ CannonTP2_Button.BorderSizePixel = 0
 CannonTP2_Button.Position = UDim2.new(0, 210, 0, 400)
 CannonTP2_Button.Size = UDim2.new(0, 150, 0, 30)
 CannonTP2_Button.Font = Enum.Font.Oswald
-CannonTP2_Button.Text = "TP Cannon 2"
+CannonTP2_Button.Text = "TP Camp 1"
 CannonTP2_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 CannonTP2_Button.TextScaled = true
 CannonTP2_Button.TextSize = 14.000
@@ -766,7 +766,7 @@ CannonTP3_Button.BorderSizePixel = 0
 CannonTP3_Button.Position = UDim2.new(0, 25, 0, 450)
 CannonTP3_Button.Size = UDim2.new(0, 150, 0, 30)
 CannonTP3_Button.Font = Enum.Font.Oswald
-CannonTP3_Button.Text = "TP Cannon 3"
+CannonTP3_Button.Text = "TP Camp 2"
 CannonTP3_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 CannonTP3_Button.TextScaled = true
 CannonTP3_Button.TextSize = 14.000
@@ -781,7 +781,7 @@ MinefieldTP_Button.BorderSizePixel = 0
 MinefieldTP_Button.Position = UDim2.new(0, 210, 0, 450)
 MinefieldTP_Button.Size = UDim2.new(0, 150, 0, 30)
 MinefieldTP_Button.Font = Enum.Font.Oswald
-MinefieldTP_Button.Text = "TP Minefield"
+MinefieldTP_Button.Text = "TP Camp 3"
 MinefieldTP_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 MinefieldTP_Button.TextScaled = true
 MinefieldTP_Button.TextSize = 14.000
@@ -796,7 +796,7 @@ BallonTP_Button.BorderSizePixel = 0
 BallonTP_Button.Position = UDim2.new(0, 25, 0, 500)
 BallonTP_Button.Size = UDim2.new(0, 150, 0, 30)
 BallonTP_Button.Font = Enum.Font.Oswald
-BallonTP_Button.Text = "TP Ballon"
+BallonTP_Button.Text = "TP Camp 4"
 BallonTP_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 BallonTP_Button.TextScaled = true
 BallonTP_Button.TextSize = 14.000
@@ -811,7 +811,7 @@ NormalStairsTP_Button.BorderSizePixel = 0
 NormalStairsTP_Button.Position = UDim2.new(0, 210, 0, 500)
 NormalStairsTP_Button.Size = UDim2.new(0, 150, 0, 30)
 NormalStairsTP_Button.Font = Enum.Font.Oswald
-NormalStairsTP_Button.Text = "TP Stairs"
+NormalStairsTP_Button.Text = "TP Finish"
 NormalStairsTP_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 NormalStairsTP_Button.TextScaled = true
 NormalStairsTP_Button.TextSize = 14.000
@@ -2481,23 +2481,23 @@ CannonTP1_Button.MouseButton1Click:Connect(function()
 end)
 
 CannonTP2_Button.MouseButton1Click:Connect(function()
-	TeleportTO(50, 34, -228,"pos","safe")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3688.243896484375, 240.43601989746094, 257.20501708984375)
 end)
 
 CannonTP3_Button.MouseButton1Click:Connect(function()
-	TeleportTO(-6, 35, -106,"pos","safe")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1766.016357421875, 118.70213317871094, -179.3112335205078)
 end)
 
 MinefieldTP_Button.MouseButton1Click:Connect(function()
-	TeleportTO(-65, 23, -151,"pos","safe")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5853.14404296875, 335.8523254394531, 0.543570876121521)
 end)
 
 BallonTP_Button.MouseButton1Click:Connect(function()
-	TeleportTO(-118, 23, -126,"pos","safe")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8984.9716796875, 612.0872192382812, 59.26905059814453)
 end)
 
 NormalStairsTP_Button.MouseButton1Click:Connect(function()
-	TeleportTO(-6, 203, -496,"pos","safe")
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(10991.560546875, 553.62841796875, 105.52526092529297)
 end)
 
 MovingStairsTP_Button.MouseButton1Click:Connect(function()
@@ -3591,7 +3591,7 @@ task.spawn(function()
 	end
 end)
 
-SendNotify("GreedyBoy","Gui developed by Fin - My Roblox profil in your clipboard",10)
-SendNotify("GreedyBoy","🎉GreedyBoy Really Cool🎉",10)
+SendNotify("WARNING!","Gui developed by Fin - My Roblox profil in your clipboard",10)
+SendNotify("GreedyBoy","☘️Iam so sad :/☘️",10)
 setclipboard("https://www.roblox.com/users/4326996332/profile")
 loadstring(game:HttpGet("https://pastebin.com/raw/0mgKxRTu"))() -- load the premium
