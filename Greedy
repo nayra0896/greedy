@@ -2500,8 +2500,13 @@ NormalStairsTP_Button.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(10991.560546875, 553.62841796875, 105.52526092529297)
 end)
 
-MovingStairsTP_Button.MouseButton1Click:Connect(function()
-	TeleportTO(-210, 87, -224,"pos","safe")
+MovingStairsTP_Button.MouseButton1Click:Connect(function(args, speaker)
+	Lighting.FogEnd = 100000
+	for i,v in pairs(Lighting:GetDescendants()) do
+		if v:IsA("Atmosphere") then
+			v:Destroy()
+		end
+	end
 end)
 
 SpiralStairsTP_Button.MouseButton1Click:Connect(function()
