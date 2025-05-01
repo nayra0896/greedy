@@ -2481,23 +2481,23 @@ CannonTP1_Button.MouseButton1Click:Connect(function()
 end)
 
 CannonTP2_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3688.243896484375, 240.43601989746094, 257.20501708984375)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3640.74658203125, 250.97866821289062, 450.26220703125)
 end)
 
 CannonTP3_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1766.016357421875, 118.70213317871094, -179.3112335205078)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1691.19482421875, 126.72208404541016, -221.49427795410156)
 end)
 
 MinefieldTP_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5853.14404296875, 335.8523254394531, 0.543570876121521)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5883.44482421875, 329.3531799316406, -228.51669311523438)
 end)
 
 BallonTP_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8984.9716796875, 612.0872192382812, 59.26905059814453)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8771.17578125, 607.7864990234375, -48.05880355834961)
 end)
 
 NormalStairsTP_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(10991.560546875, 553.62841796875, 105.52526092529297)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(10066.1005859375, 557.7741088867188, 38.839012145996094)
 end)
 
 MovingStairsTP_Button.MouseButton1Click:Connect(function(args, speaker)
