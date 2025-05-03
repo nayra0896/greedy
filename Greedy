@@ -826,7 +826,7 @@ MovingStairsTP_Button.BorderSizePixel = 0
 MovingStairsTP_Button.Position = UDim2.new(0, 25, 0, 550)
 MovingStairsTP_Button.Size = UDim2.new(0, 150, 0, 30)
 MovingStairsTP_Button.Font = Enum.Font.Oswald
-MovingStairsTP_Button.Text = "TP Moving Stairs"
+MovingStairsTP_Button.Text = "TP RoadToFinish"
 MovingStairsTP_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 MovingStairsTP_Button.TextScaled = true
 MovingStairsTP_Button.TextSize = 14.000
@@ -2497,16 +2497,11 @@ BallonTP_Button.MouseButton1Click:Connect(function()
 end)
 
 NormalStairsTP_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(10066.1005859375, 557.7741088867188, 38.839012145996094)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(10990, 553, 105)
 end)
 
 MovingStairsTP_Button.MouseButton1Click:Connect(function(args, speaker)
-	Lighting.FogEnd = 100000
-	for i,v in pairs(Lighting:GetDescendants()) do
-		if v:IsA("Atmosphere") then
-			v:Destroy()
-		end
-	end
+	TeleportTO(10066, 557, 38,"pos","safe")
 end)
 
 SpiralStairsTP_Button.MouseButton1Click:Connect(function()
@@ -3391,7 +3386,7 @@ Day_Button.MouseButton1Click:Connect(function()
 	if Shaders_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(255,0,0) then
 		game:GetService("Lighting").ClockTime = 14
 	else
-		SendNotify("GreedyBoy","Please turn off shaders.",5)
+		SendNotify("GreedyBoy","Please turn off shaders.",7)
 	end
 end)
 
@@ -3399,7 +3394,7 @@ Night_Button.MouseButton1Click:Connect(function()
 	if Shaders_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(255,0,0) then
 		game:GetService("Lighting").ClockTime = 19
 	else
-		SendNotify("GreedyBoy","Please turn off shaders.",5)
+		SendNotify("GreedyBoy","Please turn off shaders.",7)
 	end
 end)
 
@@ -3465,7 +3460,7 @@ Players.PlayerRemoving:Connect(function(player)
 	pcall(function()
 		if player.Name == TargetedPlayer then
 			UpdateTarget(nil)
-			SendNotify("GreedyBoy","Targeted player has been left wkwk.",5)
+			SendNotify("GreedyBoy","Targeted player has been left.",5)
 		end
 	end)
 end)
@@ -3498,7 +3493,7 @@ plr.CharacterAdded:Connect(function(x)
 		Fly_Pad.Visible = false
 		KeyDownFunction:Disconnect()
 		KeyUpFunction:Disconnect()
-		SendNotify("GreedyBoy","Fly was automatically disabled due to your character respawn",5)
+		SendNotify("GreedyBoy","Fly was automatically disabled due to your character respawn",10)
 	end
 	x.Humanoid.Died:Connect(function()
 		pcall(function()
