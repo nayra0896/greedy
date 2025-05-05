@@ -826,7 +826,7 @@ MovingStairsTP_Button.BorderSizePixel = 0
 MovingStairsTP_Button.Position = UDim2.new(0, 25, 0, 550)
 MovingStairsTP_Button.Size = UDim2.new(0, 150, 0, 30)
 MovingStairsTP_Button.Font = Enum.Font.Oswald
-MovingStairsTP_Button.Text = "TP RoadToFinish"
+MovingStairsTP_Button.Text = "RoadTo Camp 2"
 MovingStairsTP_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 MovingStairsTP_Button.TextScaled = true
 MovingStairsTP_Button.TextSize = 14.000
@@ -841,7 +841,7 @@ SpiralStairsTP_Button.BorderSizePixel = 0
 SpiralStairsTP_Button.Position = UDim2.new(0, 210, 0, 550)
 SpiralStairsTP_Button.Size = UDim2.new(0, 150, 0, 30)
 SpiralStairsTP_Button.Font = Enum.Font.Oswald
-SpiralStairsTP_Button.Text = "TP Spiral Stairs"
+SpiralStairsTP_Button.Text = "RoadTo Camp 3"
 SpiralStairsTP_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 SpiralStairsTP_Button.TextScaled = true
 SpiralStairsTP_Button.TextSize = 14.000
@@ -856,7 +856,7 @@ SkyscraperTP_Button.BorderSizePixel = 0
 SkyscraperTP_Button.Position = UDim2.new(0, 25, 0, 600)
 SkyscraperTP_Button.Size = UDim2.new(0, 150, 0, 30)
 SkyscraperTP_Button.Font = Enum.Font.Oswald
-SkyscraperTP_Button.Text = "TP Skyscraper"
+SkyscraperTP_Button.Text = "RoadTo Finish"
 SkyscraperTP_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 SkyscraperTP_Button.TextScaled = true
 SkyscraperTP_Button.TextSize = 14.000
@@ -2477,39 +2477,39 @@ ChatAlert_Button.MouseButton1Click:Connect(function()
 end)
 
 CannonTP1_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6048.509765625, -152.31680297851562, -19.11366844177246)
+	TeleportTO(6092, -152, 14,"pos","safe")
 end)
 
 CannonTP2_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3640.74658203125, 250.97866821289062, 450.26220703125)
+	TeleportTO(-3668, 229, 273,"pos","safe")
 end)
 
 CannonTP3_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1691.19482421875, 126.72208404541016, -221.49427795410156)
+	TeleportTO(1748, 105, -180,"pos","safe")
 end)
 
 MinefieldTP_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5883.44482421875, 329.3531799316406, -228.51669311523438)
+	TeleportTO(5845, 321, 17,"pos","safe")
 end)
 
 BallonTP_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8771.17578125, 607.7864990234375, -48.05880355834961)
+	TeleportTO(8980, 597, 42,"pos","safe")
 end)
 
 NormalStairsTP_Button.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(10990, 553, 105)
+	TeleportTO(11025, 549, 113,"pos","safe")
 end)
 
 MovingStairsTP_Button.MouseButton1Click:Connect(function(args, speaker)
-	TeleportTO(10066, 557, 38,"pos","safe")
+	TeleportTO(-2306, 101, -20,"pos","safe")
 end)
 
 SpiralStairsTP_Button.MouseButton1Click:Connect(function()
-	TeleportTO(151, 847, -306,"pos","safe")
+	TeleportTO(4721, 906, 516,"pos","safe")
 end)
 
 SkyscraperTP_Button.MouseButton1Click:Connect(function()
-	TeleportTO(142, 1033, -192,"pos","safe")
+	TeleportTO(10597, 549, 258,"pos","safe")
 end)
 
 PoolTP_Button.MouseButton1Click:Connect(function()
