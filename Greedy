@@ -2477,7 +2477,7 @@ ChatAlert_Button.MouseButton1Click:Connect(function()
 end)
 
 CannonTP1_Button.MouseButton1Click:Connect(function()
-	TeleportTO(6092, -152, 14,"pos","safe")
+	TeleportTO(-6092, -152, 14,"pos","safe")
 end)
 
 CannonTP2_Button.MouseButton1Click:Connect(function()
