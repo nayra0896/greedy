@@ -2512,9 +2512,12 @@ SkyscraperTP_Button.MouseButton1Click:Connect(function()
 	TeleportTO(10597, 549, 258,"pos","safe")
 end)
 
--- Fungsi saat tombol diklik
 PoolTP_Button.MouseButton1Click:Connect(function()
-    -- Cari semua Hitbox di workspace
+    local player = game.Players.LocalPlayer
+    local char = player.Character or player.CharacterAdded:Wait()
+    local hrp = char:WaitForChild("HumanoidRootPart")
+
+    -- ambil semua Hitbox
     local hitboxes = {}
     for _, obj in pairs(workspace:GetChildren()) do
         if obj:IsA("Part") and obj.Name == "Hitbox" then
@@ -2522,30 +2525,16 @@ PoolTP_Button.MouseButton1Click:Connect(function()
         end
     end
 
-    -- Kalau tidak ada Hitbox
-    if #hitboxes == 0 then
-        warn("Tidak ada Hitbox di workspace.")
-        return
-    end
-
-    -- Teleport ke setiap Hitbox sampai habis
+    -- teleport satu per satu
     for _, hitbox in ipairs(hitboxes) do
         if hitbox and hitbox.Parent then
-            -- Panggil fungsi teleport milikmu
-            TeleportTO(hitbox.Position.X, hitbox.Position.Y + 5, hitbox.Position.Z, "pos", "safe")
-
-            -- Tunggu sampai part hilang atau 1 detik
-            local timeWaited = 0
-            while hitbox and hitbox.Parent and timeWaited < 1 do
-                wait(0.1)
-                timeWaited += 0.1
-            end
+            hrp.CFrame = hitbox.CFrame + Vector3.new(0, 5, 0) -- muncul 5 stud di atas part
+            wait(0.3) -- jeda supaya sempat "tersentuh"
         end
     end
 
-    print("Semua Hitbox sudah selesai dikunjungi!")
+    print("Semua Hitbox selesai dikunjungi!")
 end)
-
 
 CMDBar.FocusLost:Connect(function()
 	command = CMDBar.Text
@@ -3626,4 +3615,5 @@ SendNotify("WARNING!","Gui developed by Fin - My Roblox profil in your clipboard
 SendNotify("GreedyBoy","☘️Iam so sad :/☘️",10)
 setclipboard("https://www.roblox.com/id/users/6650256/profile")
 loadstring(game:HttpGet("https://pastebin.com/raw/0mgKxRTu"))() -- load the premium
+
 
