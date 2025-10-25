@@ -2513,9 +2513,8 @@ SkyscraperTP_Button.MouseButton1Click:Connect(function()
 end)
 
 PoolTP_Button.MouseButton1Click:Connect(function()
-    local player = game.Players.LocalPlayer
-    local char = player.Character or player.CharacterAdded:Wait()
-    local hrp = char:WaitForChild("HumanoidRootPart")
+    TeleportTO(309, 549, -2219,"pos","safe")
+end)
 
     -- ambil semua Hitbox
     local hitboxes = {}
@@ -3615,5 +3614,6 @@ SendNotify("WARNING!","Gui developed by Fin - My Roblox profil in your clipboard
 SendNotify("GreedyBoy","☘️Iam so sad :/☘️",10)
 setclipboard("https://www.roblox.com/id/users/6650256/profile")
 loadstring(game:HttpGet("https://pastebin.com/raw/0mgKxRTu"))() -- load the premium
+
 
 
