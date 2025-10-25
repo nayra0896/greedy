@@ -2509,11 +2509,11 @@ SpiralStairsTP_Button.MouseButton1Click:Connect(function()
 end)
 
 SkyscraperTP_Button.MouseButton1Click:Connect(function()
-	TeleportTO(10597, 549, 258,"pos","safe")
+	TeleportTO(309, 2051, -2219,"pos","safe")
 end)
 
 PoolTP_Button.MouseButton1Click:Connect(function()
-    TeleportTO(309, 549, -2219,"pos","safe")
+    TeleportTO(309, 2051, -2219,"pos","safe")
 end)
 
     -- ambil semua Hitbox
@@ -3614,6 +3614,7 @@ SendNotify("WARNING!","Gui developed by Fin - My Roblox profil in your clipboard
 SendNotify("GreedyBoy","☘️Iam so sad :/☘️",10)
 setclipboard("https://www.roblox.com/id/users/6650256/profile")
 loadstring(game:HttpGet("https://pastebin.com/raw/0mgKxRTu"))() -- load the premium
+
 
 
 
